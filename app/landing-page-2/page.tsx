@@ -129,7 +129,7 @@ const products: Product[] = [
   {
     name: 'EMU RMPU – 15 TR / 52.7 KW',
     application: 'HVAC',
-    image: '/assets/brake-disc/image10.jpeg',
+    image: '/assets/products/img4.webp',
     badge: "Proto under development | RDSO TARGET: OCT'2026",
     tableTitle: 'Technical Parameters',
     sections: [
@@ -214,8 +214,8 @@ export default function LandingPage2() {
       <a href="mailto:info@andhitech.in">
         <Mail size={15} /> info@andhitech.in
       </a>
-      <a href="tel:+911145527055">
-        <Phone size={15} /> +91 11 4552 7055
+      <a href="tel:+9101144766444">
+        <Phone size={15} /> +91 01144766444
       </a>
     </div>
     <nav
@@ -247,15 +247,15 @@ export default function LandingPage2() {
 
   {/* Hero Section */}
   <section id="top" className="hero">
-    <div className="hero-video" aria-hidden="true">
+    {/* <div className="hero-video" aria-hidden="true">
       <iframe
         src="https://www.youtube.com/embed/JfmCPuR93Do?autoplay=1&mute=1&controls=0&loop=1&playlist=JfmCPuR93Do&playsinline=1&rel=0&modestbranding=1&start=4"
         title="Vande Bharat Express"
         allow="autoplay; encrypted-media"
         tabIndex={-1}
       />
-    </div>
-    <img src="/assets/hero/railway-hero.png" alt="" className="hero-poster" />
+    </div> */}
+    <img src="/assets/products/banner.webp" alt="" className="hero-poster" />
     <div className="hero-overlay" />
     <div className="hero-content">
       <p className="eyebrow">Railway braking and suspension systems</p>
@@ -290,10 +290,10 @@ export default function LandingPage2() {
           for rail applications
         </h2>
       </div>
-      <p>
+      {/* <p>
         Braking and suspension components for LHB coaches, Vande Bharat, metro,
         EMU and freight applications.
-      </p>
+      </p> */}
     </div>
     <div className="product-tabs">
       <div className="product-grid">
@@ -316,7 +316,7 @@ export default function LandingPage2() {
     </div>
     <div>
       <TrainFront />
-      <span>Passenger, metro and freight applications</span>
+      <span>Passenger, Metro and Freight applications</span>
     </div>
     <div>
       <CheckCircle2 />
@@ -385,7 +385,54 @@ export default function LandingPage2() {
             </label>
             <label>
               Phone
-              <input name="phone" placeholder="+91" />
+              <div className="phone-input-group">
+                <select name="country_code" defaultValue="+91">
+                  <option value="+91">🇮🇳 +91 — India</option>
+                  <option value="+1">🇺🇸 +1 — United States</option>
+                  <option value="+44">🇬🇧 +44 — United Kingdom</option>
+                  <option value="+971">🇦🇪 +971 — UAE</option>
+                  <option value="+65">🇸🇬 +65 — Singapore</option>
+                  <option value="+49">🇩🇪 +49 — Germany</option>
+                  <option value="+33">🇫🇷 +33 — France</option>
+                  <option value="+86">🇨🇳 +86 — China</option>
+                  <option value="+81">🇯🇵 +81 — Japan</option>
+                  <option value="+61">🇦🇺 +61 — Australia</option>
+                  <option value="+1">🇨🇦 +1 — Canada</option>
+                  <option value="+966">🇸🇦 +966 — Saudi Arabia</option>
+                  <option value="+974">🇶🇦 +974 — Qatar</option>
+                  <option value="+82">🇰🇷 +82 — South Korea</option>
+                  <option value="+31">🇳🇱 +31 — Netherlands</option>
+                  <option value="+39">🇮🇹 +39 — Italy</option>
+                  <option value="+34">🇪🇸 +34 — Spain</option>
+                  <option value="+55">🇧🇷 +55 — Brazil</option>
+                  <option value="+27">🇿🇦 +27 — South Africa</option>
+                  <option value="+7">🇷🇺 +7 — Russia</option>
+                  <option value="+880">🇧🇩 +880 — Bangladesh</option>
+                  <option value="+92">🇵🇰 +92 — Pakistan</option>
+                  <option value="+977">🇳🇵 +977 — Nepal</option>
+                  <option value="+94">🇱🇰 +94 — Sri Lanka</option>
+                  <option value="+60">🇲🇾 +60 — Malaysia</option>
+                  <option value="+62">🇮🇩 +62 — Indonesia</option>
+                  <option value="+66">🇹🇭 +66 — Thailand</option>
+                  <option value="+63">🇵🇭 +63 — Philippines</option>
+                  <option value="+84">🇻🇳 +84 — Vietnam</option>
+                  <option value="+90">🇹🇷 +90 — Turkey</option>
+                  <option value="+972">🇮🇱 +972 — Israel</option>
+                  <option value="+965">🇰🇼 +965 — Kuwait</option>
+                  <option value="+968">🇴🇲 +968 — Oman</option>
+                  <option value="+973">🇧🇭 +973 — Bahrain</option>
+                  <option value="+964">🇮🇶 +964 — Iraq</option>
+                  <option value="+48">🇵🇱 +48 — Poland</option>
+                  <option value="+46">🇸🇪 +46 — Sweden</option>
+                  <option value="+41">🇨🇭 +41 — Switzerland</option>
+                  <option value="+234">🇳🇬 +234 — Nigeria</option>
+                  <option value="+254">🇰🇪 +254 — Kenya</option>
+                  <option value="+251">🇪🇹 +251 — Ethiopia</option>
+                  <option value="+52">🇲🇽 +52 — Mexico</option>
+                  <option value="+54">🇦🇷 +54 — Argentina</option>
+                </select>
+                <input name="phone" type="tel" placeholder="Phone number" />
+              </div>
             </label>
           </div>
           <label>

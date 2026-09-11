@@ -166,6 +166,9 @@ button, input, textarea, select { font: inherit; }
 .contact-form label { display: flex; flex-direction: column; gap: 7px; margin-bottom: 13px; color: #4f5a71; font-size: 11px; font-weight: 700; letter-spacing: .04em; }
 .contact-form input, .contact-form textarea, .contact-form select { width: 100%; padding: 11px 12px; border: 1px solid #d8dde6; border-radius: 1px; outline: none; background: #fafbfc; color: #172044; font-size: 13px; }
 .contact-form input:focus, .contact-form textarea:focus, .contact-form select:focus { border-color: #162779; box-shadow: 0 0 0 2px #16277912; }
+.phone-input-group { display: flex; gap: 8px; width: 100%; }
+.phone-input-group select { padding:0;width: 120px; flex-shrink: 0; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; cursor: pointer; }
+.phone-input-group input { flex: 1; min-width: 0; }
 .submit-button { width: 100%; display: flex; align-items: center; justify-content: center; gap: 9px; margin-top: 3px; padding: 13px; border: 0; border-radius: 1px; background: #ffce00; color: #162779; font-size: 13px; font-weight: 700; cursor: pointer; }
 .success-message { min-height: 360px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #162779; }
 .success-message svg { color: #d3aa00; }
@@ -173,11 +176,11 @@ button, input, textarea, select { font: inherit; }
 .success-message p { color: #68738a; }
 .success-message button { margin-top: 15px; border: 0; background: transparent; color: #162779; font-weight: 700; text-decoration: underline; cursor: pointer; }
 
-footer { display: grid; grid-template-columns: 1fr 1fr auto; align-items: center; gap: 25px; padding: 30px clamp(24px, 5vw, 76px) 20px; background: #0c1748; color: #acb6d1; border-top: 1px solid #ffffff17; }
-footer img { width: 150px; filter: brightness(0) invert(1); }
-footer > p { font-size: 12px; }
-.footer-links { display: flex; gap: 24px; color: #fff; font-size: 12px; font-weight: 700; }
-.copyright { grid-column: 1 / -1; margin: 4px 0 0; padding-top: 16px; border-top: 1px solid #ffffff13; text-align: center; }
+footer { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: 25px; padding: 30px clamp(24px, 5vw, 76px) 20px; background: #0c1748; color: #acb6d1; border-top: 1px solid #ffffff17; }
+footer img { width: 150px; justify-self: start; }
+footer > p:not(.copyright) { font-size: 12px; text-align: center; justify-self: center; margin: 0; }
+.footer-links { display: flex; gap: 24px; color: #fff; font-size: 12px; font-weight: 700; justify-self: end; }
+.copyright { grid-column: 1 / -1; width: 100%; margin: 4px 0 0; padding-top: 16px; border-top: 1px solid #ffffff13; text-align: center; font-size: 12px; }
 
 .modal-backdrop { position: fixed; inset: 0; z-index: 80; display: grid; place-items: center; padding: 20px; background: #071033c7; backdrop-filter: blur(8px); }
 .product-modal { position: relative; width: min(1080px, 96vw); max-height: calc(100vh - 44px); overflow-y: auto; display: flex; flex-direction: column; background: #fff; box-shadow: 0 28px 80px #02061766; border-radius: 3px; }
