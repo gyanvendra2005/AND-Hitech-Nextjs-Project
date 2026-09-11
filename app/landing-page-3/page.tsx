@@ -119,15 +119,15 @@ export default function LandingPage3() {
 
   {/* Hero Section */}
   <section id="top" className="hero">
-    <div className="hero-video" aria-hidden="true">
+    {/* <div className="hero-video" aria-hidden="true">
       <iframe
         src="https://www.youtube.com/embed/JfmCPuR93Do?autoplay=1&mute=1&controls=0&loop=1&playlist=JfmCPuR93Do&playsinline=1&rel=0&modestbranding=1&start=4"
         title="Vande Bharat Express"
         allow="autoplay; encrypted-media"
         tabIndex={-1}
       />
-    </div>
-    <img src="/assets/hero/railway-hero.png" alt="" className="hero-poster" />
+    </div> */}
+    <img src="/assets/products/banner.webp" alt="" className="hero-poster" />
     <div className="hero-overlay" />
     <div className="hero-content">
       <p className="eyebrow">Railway braking and suspension systems</p>
