@@ -129,7 +129,7 @@ const products: Product[] = [
   {
     name: 'EMU RMPU – 15 TR / 52.7 KW',
     application: 'HVAC',
-    image: '/assets/products/img4.webp',
+    image: '/assets/products/RMPU.webp',
     badge: "Proto under development | RDSO TARGET: OCT'2026",
     tableTitle: 'Technical Parameters',
     sections: [
